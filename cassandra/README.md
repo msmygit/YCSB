@@ -15,11 +15,11 @@ permissions and limitations under the License. See accompanying
 LICENSE file.
 -->
 
-# Apache Cassandra 2.x CQL binding
+# Apache Cassandra 4.x CQL binding
 
 Binding for [Apache Cassandra](http://cassandra.apache.org), using the CQL API
 via the [DataStax
-driver](http://docs.datastax.com/en/developer/java-driver/2.1/java-driver/whatsNew2.html).
+driver](http://docs.datastax.com/en/developer/java-driver/4.17/java-driver/whatsNew2.html).
 
 To run against the (deprecated) Cassandra Thrift API, use the `cassandra-10` binding.
 
@@ -54,6 +54,9 @@ For keyspace `ycsb`, table `usertable`:
 * `port`
   * CQL port for communicating with Cassandra cluster.
   * Default is `9042`.
+
+- `cassandra.scb_path`
+  File path for the Secure Connection Bundle (To connect with DataStax Astra DB)
 
 - `cassandra.keyspace`
   Keyspace name - must match the keyspace for the table created (see above).
