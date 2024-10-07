@@ -17,7 +17,7 @@
 
 /**
  * The YCSB binding for <a href="http://cassandra.apache.org/">Cassandra</a> 
- * 2.1+ via CQL.
+ * 4.17+ via CQL.
  */
 package site.ycsb.db;
 
