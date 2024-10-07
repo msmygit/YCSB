@@ -64,6 +64,7 @@ import site.ycsb.Status;
  * <p>See {@code cassandra/README.md} for details.
  *
  * @author cmatser
+ * @author smatiolids
  */
 public class CassandraCQLClient extends DB {
 
