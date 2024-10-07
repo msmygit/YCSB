@@ -19,7 +19,7 @@ LICENSE file.
 
 Binding for [Apache Cassandra](http://cassandra.apache.org), using the CQL API
 via the [DataStax
-driver](http://docs.datastax.com/en/developer/java-driver/4.17/java-driver/whatsNew2.html).
+driver](https://docs.datastax.com/en/developer/java-driver/4.17/index.html).
 
 To run against the (deprecated) Cassandra Thrift API, use the `cassandra-10` binding.
 

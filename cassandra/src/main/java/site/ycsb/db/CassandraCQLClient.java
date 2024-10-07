@@ -59,9 +59,9 @@ import site.ycsb.DBException;
 import site.ycsb.Status;
 
 /**
- * Cassandra 2.x CQL client.
+ * Cassandra 4.x CQL client.
  *
- * <p>See {@code cassandra2/README.md} for details.
+ * <p>See {@code cassandra/README.md} for details.
  *
  * @author cmatser
  */
