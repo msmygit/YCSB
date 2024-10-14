@@ -16,11 +16,13 @@ permissions and limitations under the License. See accompanying
 LICENSE file.
 -->
 
-YCSB
+YCSB - For DATASTAX ASTRA DB/CASSNDRA
 ====================================
+
 [![Build Status](https://travis-ci.org/brianfrankcooper/YCSB.png?branch=master)](https://travis-ci.org/brianfrankcooper/YCSB)
 
 
+This fork from the original repo is adapted to consider the CQL Driver 4 and allow connection to Astra DB.
 
 Links
 -----
@@ -31,12 +33,12 @@ Links
 Getting Started
 ---------------
 
-1. Download the [latest release of YCSB](https://github.com/brianfrankcooper/YCSB/releases/latest):
+1. Download the [latest release of this Astra DB YCSB](https://github.com/smatiolids/YCSB/releases/latest):
 
     ```sh
-    curl -O --location https://github.com/brianfrankcooper/YCSB/releases/download/0.17.0/ycsb-0.17.0.tar.gz
-    tar xfvz ycsb-0.17.0.tar.gz
-    cd ycsb-0.17.0
+   curl -O --location https://github.com/smatiolids/YCSB/releases/download/v0.18.0-astra/ycsb-0.18.0-SNAPSHOT.tar.gz
+   tar xfvz ycsb-0.18.0-SNAPSHOT.tar.gz
+   cd ycsb-0.18.0-SNAPSHOT
     ```
     
 2. Set up a database to benchmark. There is a README file under each binding 
@@ -63,6 +65,21 @@ Getting Started
 
   See https://github.com/brianfrankcooper/YCSB/wiki/Core-Properties for 
   the list of available workload properties.
+
+
+Running with Cassandra and Astra DB
+--------------------
+
+
+```
+./bin/ycsb.sh run cassandra-cql -P workloads/workloada \
+-p cassandra.username=<client_id or user> \
+-p cassandra.password=<client_secret or password> \
+-p cassandra.keyspace=<keyspace name> \
+-p cassandra.scb_path=<Secure Connect Bundle file path. E.g: /path/to/secure-connect-my_astra_db_name.zip>
+```
+
+More on Cassandra Readme: (https://github.com/smatiolids/YCSB/blob/main/cassandra/)
 
 
 Building from source
