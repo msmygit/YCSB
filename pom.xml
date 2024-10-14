@@ -16,7 +16,9 @@ permissions and limitations under the License. See accompanying
 LICENSE file.
 -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>site.ycsb</groupId>
@@ -102,6 +104,11 @@ LICENSE file.
         <artifactId>slf4j-api</artifactId>
         <version>1.7.25</version>
       </dependency>
+      <dependency>
+        <groupId>org.apache.htrace</groupId>
+        <artifactId>htrace-core4</artifactId>
+        <version>4.2.0-incubating</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -111,13 +118,15 @@ LICENSE file.
     <maven.dependency.version>2.10</maven.dependency.version>
 
     <!-- datastore binding versions, lex sorted -->
+    <cassandra.cql.version>4.17.0</cassandra.cql.version>
+
+    <!--
     <accumulo.1.9.version>1.9.3</accumulo.1.9.version>
     <aerospike.version>3.1.2</aerospike.version>
     <arangodb.version>4.4.1</arangodb.version>
     <asynchbase.version>1.8.2</asynchbase.version>
     <azurecosmos.version>4.8.0</azurecosmos.version>
     <azurestorage.version>4.0.0</azurestorage.version>
-    <cassandra.cql.version>4.17.0</cassandra.cql.version>
     <cloudspanner.version>6.71.0</cloudspanner.version>
     <couchbase.version>1.4.10</couchbase.version>
 		<couchbase2.version>2.3.1</couchbase2.version>
@@ -150,6 +159,7 @@ LICENSE file.
     <tablestore.version>4.8.0</tablestore.version>
     <voltdb.version>10.1.1</voltdb.version>
     <zookeeper.version>3.5.8</zookeeper.version>
+    -->
   </properties>
 
   <modules>
@@ -158,13 +168,15 @@ LICENSE file.
     <module>binding-parent</module>
     <module>distribution</module>
     <!-- all the datastore bindings, lex sorted please -->
+    <module>cassandra</module>
+    <!-- 
+    
     <module>accumulo1.9</module>
     <module>aerospike</module>
     <module>arangodb</module>
     <module>asynchbase</module>
     <module>azurecosmos</module>
     <module>azuretablestorage</module>
-    <module>cassandra</module>
     <module>cloudspanner</module>
     <module>couchbase</module>
 		<module>couchbase2</module>
@@ -203,6 +215,8 @@ LICENSE file.
     <module>tablestore</module>
     <module>voltdb</module>
     <module>zookeeper</module>
+    -->
+
   </modules>
 
   <build>

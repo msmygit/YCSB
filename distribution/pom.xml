@@ -39,7 +39,14 @@ LICENSE file.
       <artifactId>core</artifactId>
       <version>${project.version}</version>
     </dependency>
+
     <dependency>
+      <groupId>site.ycsb</groupId>
+      <artifactId>cassandra-binding</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- <dependency>
       <groupId>site.ycsb</groupId>
       <artifactId>accumulo1.9-binding</artifactId>
       <version>${project.version}</version>
@@ -57,11 +64,6 @@ LICENSE file.
     <dependency>
       <groupId>site.ycsb</groupId>
       <artifactId>asynchbase-binding</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>site.ycsb</groupId>
-      <artifactId>cassandra-binding</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -263,7 +265,7 @@ LICENSE file.
       <groupId>site.ycsb</groupId>
       <artifactId>zookeeper-binding</artifactId>
       <version>${project.version}</version>
-    </dependency>
+    </dependency> -->
 
   </dependencies>
   <build>
@@ -301,4 +303,3 @@ LICENSE file.
   </profiles>
 
 </project>
-
