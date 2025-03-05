@@ -118,7 +118,7 @@ LICENSE file.
     <maven.dependency.version>2.10</maven.dependency.version>
 
     <!-- datastore binding versions, lex sorted -->
-    <cassandra.cql.version>4.17.0</cassandra.cql.version>
+    <cassandra.cql.version>4.19.0</cassandra.cql.version>
 
     <!--
     <accumulo.1.9.version>1.9.3</accumulo.1.9.version>
