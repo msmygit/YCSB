@@ -40,12 +40,12 @@ LICENSE file.
   <dependencies>
     <!-- CQL driver -->
     <dependency>
-      <groupId>com.datastax.oss</groupId>
+      <groupId>org.apache.cassandra</groupId>
       <artifactId>java-driver-core</artifactId>
       <version>${cassandra.cql.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.datastax.oss</groupId>
+      <groupId>org.apache.cassandras</groupId>
       <artifactId>java-driver-query-builder</artifactId>
       <version>${cassandra.cql.version}</version>
     </dependency>
