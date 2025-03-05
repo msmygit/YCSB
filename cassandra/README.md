@@ -19,7 +19,7 @@ LICENSE file.
 
 Binding for [Apache Cassandra](http://cassandra.apache.org), using the CQL API
 via the [DataStax
-driver](https://docs.datastax.com/en/developer/java-driver/4.17/index.html).
+driver](https://docs.datastax.com/en/developer/java-driver/latest/index.html).
 
 To run against the (deprecated) Cassandra Thrift API, use the `cassandra-10` binding.
 
@@ -56,7 +56,7 @@ For keyspace `ycsb`, table `usertable`:
   * Default is `9042`.
 
 - `cassandra.scb_path`
-  File path for the Secure Connection Bundle (To connect with DataStax Astra DB)
+  File path for the Secure Connection Bundle (To connect with [**DataStax Astra DB**](https://db.new))
 
 - `cassandra.keyspace`
   Keyspace name - must match the keyspace for the table created (see above).
