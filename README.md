@@ -16,7 +16,7 @@ permissions and limitations under the License. See accompanying
 LICENSE file.
 -->
 
-YCSB - For DATASTAX ASTRA DB/CASSNDRA
+YCSB - For DataStax Astra DB/Cassandra
 ====================================
 
 [![Build Status](https://travis-ci.org/brianfrankcooper/YCSB.png?branch=master)](https://travis-ci.org/brianfrankcooper/YCSB)
