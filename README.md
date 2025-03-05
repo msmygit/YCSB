@@ -16,13 +16,13 @@ permissions and limitations under the License. See accompanying
 LICENSE file.
 -->
 
-YCSB - For DataStax Astra DB/Cassandra
+YCSB - For [**DataStax Astra DB**](https://db.new)/Cassandra
 ====================================
 
 [![Build Status](https://travis-ci.org/brianfrankcooper/YCSB.png?branch=master)](https://travis-ci.org/brianfrankcooper/YCSB)
 
 
-This fork from the original repo is adapted to consider the CQL Driver 4 and allow connection to Astra DB.
+This fork from the original repo is adapted to consider the CQL Driver 4 and allow connection to [**DataStax Astra DB**](https://db.new).
 
 Links
 -----
